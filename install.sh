@@ -205,3 +205,6 @@ sudo chown "${uname}" -R /var/log/rustdesk/
 rustdesksignal="$(cat << EOF
 [Unit]
 Description=Rustdesk Signal Server
+# Other configuration lines
+EOF
+)"
