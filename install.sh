@@ -205,6 +205,14 @@ sudo chown "${uname}" -R /var/log/rustdesk/
 rustdesksignal="$(cat << EOF
 [Unit]
 Description=Rustdesk Signal Server
-# Other configuration lines
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/rustdesk/hbbs
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
 EOF
 )"
