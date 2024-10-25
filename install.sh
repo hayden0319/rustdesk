@@ -416,3 +416,4 @@ elif [ "$http" = "false" ]; then
     echo -e "Install Rustdesk on your machines and change your public key and IP/DNS name to the above"
 
     echo - e "You can get a free API with Addressbook etc via https://github.com/infiniteremote/installer"
+fi
